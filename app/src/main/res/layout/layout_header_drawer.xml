@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="196dp"
+    android:background="@drawable/side_nav_bar"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin">
+
+    <ImageView
+        android:id="@+id/iv_fotoprofil"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:paddingTop="8dp"
+        app:srcCompat="@drawable/ic_profil"
+        tools:ignore="ContentDescription,VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/tv_nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:textSize="14sp"
+        android:text="Galung App"
+        android:fontFamily="@font/fira_sans_regular"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:gravity="center"/>
+<!--        android:textAppearance="@style/TextAppearance.AppCompat.Body1" -->
+
+    <TextView
+        android:id="@+id/tv_verifikasi"
+        android:layout_marginTop="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:textSize="12sp"
+        android:visibility="gone"
+        android:fontFamily="@font/fira_sans_regular"
+        android:text="Terverifikasi"/>
+    <LinearLayout
+        android:id="@+id/linearRegLog"
+        android:layout_marginTop="22dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textSize="12sp"
+            android:background="@drawable/btn_radius_6dp"
+            android:text="Masuk"
+            android:fontFamily="@font/fira_sans_bold"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"/>
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textSize="12sp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/fira_sans_bold"
+            android:background="@drawable/btn_radius_6dp_bolder"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:text="Daftar"
+            android:textColor="@color/colorAccent"/>
+    </LinearLayout>
+
+</LinearLayout>

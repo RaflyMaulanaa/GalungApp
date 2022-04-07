@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_home"
+        android:id="@+id/nav_home"
+        android:title="Home" />
+    <item android:icon="@drawable/ic_search"
+        android:id="@+id/nav_search"
+        android:title="Pencarian" />
+    <item android:icon="@drawable/ic_cart"
+        android:id="@+id/nav_pesanan"
+        android:title="Pesanan" />
+    <item android:icon="@drawable/ic_keranjang"
+        android:id="@+id/nav_keranjang"
+        android:title="Keranjang" />
+</menu>

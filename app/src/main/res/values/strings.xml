@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Galung App</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="informasi_daftar">Dengan menekan tombol daftar, saya menyetujui Syarat dan \nKetentuan dan Kebijakan Privasi Galung</string>
+    <string name="informasi_cardView1">Fitur Ini memudahkan para petani untuk\nmenginformasikan jumlah Stok Gabah yang\nakan panen.</string>
+    <string name="informasi_cardView2">Fitur Beras akan menginformasikan, jumlah\nstok beras, jenis beras, harga serta pilihan\nakan membeli beras.</string>
+    <string name="contoh_informasi_cardView3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eros ipsum, viverra eu luctus eu, scelerisque eget nulla. Proin vel nulla vel libero rutrum convallis. Proin quis eros quis est volutpat tristique.</string>
+    <string name="contoh_informasi_cardView4">HAJAR-JAHANAM ORIGINAL isi 5ml BERKHASIAT!! READY STOK!! LANGSUNG ORDER JURAGAN!! SINI HARGA LEBIH MURAH NGAPAIN BELI YANG MAHAL??LAPAK LAIN KALAH HARGA, TERUS NGAKU ORI??</string>
+</resources>

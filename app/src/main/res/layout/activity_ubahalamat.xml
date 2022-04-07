@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        android:background="@color/colorAccent"
+        android:minHeight="?attr/actionBarSize">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_main"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorbgtoolbar"
+            android:minHeight="?attr/actionBarSize"
+            app:theme="@style/AppTheme">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/iv_buttonback"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+                    android:src="@drawable/ic_backmenu"
+                    android:layout_gravity="start" />
+                <TextView
+                    style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/colorbgedittextcoklat"
+                    android:textStyle="bold"
+                    android:text="Ubah Alamat"
+                    android:fontFamily="@font/fira_sans_bold"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@android:color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+
+                android:fontFamily="@font/fira_sans_regular"
+                android:text="Nama Penerima"
+                android:textColor="@color/textColor"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorbgedittext"
+                android:gravity="center|start">
+
+                <EditText
+                    android:id="@+id/et_nama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@null"
+                    android:fontFamily="@font/fira_sans_bold"
+                    android:hint="Nama Lengkap Penerima"
+                    android:singleLine="true"
+                    android:textColor="@color/textColor"
+                    android:textColorHint="@color/colorbghint"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/fira_sans_regular"
+                android:text="Nomor Handphone"
+                android:textColor="@color/textColor"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorbgedittext"
+                android:gravity="center|start">
+
+                <EditText
+                    android:id="@+id/et_nomortlp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@null"
+                    android:fontFamily="@font/fira_sans_bold"
+                    android:hint="Nomor Handphone"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textColor="@color/textColor"
+                    android:textColorHint="@color/colorbghint"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/fira_sans_regular"
+                android:text="Alamat"
+                android:textColor="@color/textColor"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorbgedittext"
+                android:gravity="center|start">
+
+                <EditText
+                    android:id="@+id/et_alamat"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@null"
+                    android:fontFamily="@font/fira_sans_bold"
+                    android:gravity="top|left"
+                    android:hint="Alamat Lengkap"
+                    android:textColor="@color/textColor"
+                    android:textColorHint="@color/colorbghint"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/fira_sans_regular"
+                android:text="Provinsi"
+                android:textColor="@color/textColor"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorbgedittext"
+                android:gravity="center|start"
+                android:orientation="horizontal">
+
+                <id.example.galungapp.Searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/spin_provinsi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@null"
+                    android:fontFamily="@font/fira_sans_bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="12dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/fira_sans_regular"
+                    android:gravity="start"
+                    android:text="Kabupaten / Kota"
+                    android:textColor="@color/textColor"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/fira_sans_regular"
+                    android:gravity="start"
+                    android:text="Kecamatan"
+                    android:textColor="@color/textColor"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="4dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorbgedittext"
+                    android:gravity="center|start"
+                    android:orientation="horizontal">
+
+                    <id.example.galungapp.Searchablespinnerlibrary.SearchableSpinner
+                        android:id="@+id/spin_kabupatenkota"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@null"
+                        android:fontFamily="@font/fira_sans_bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorbgedittext"
+                    android:gravity="center|start"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/et_kecamatan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@null"
+                        android:fontFamily="@font/fira_sans_bold"
+                        android:hint="Kecamatan"
+                        android:textColorHint="@color/colorbghint"
+                        android:textColor="@color/textColor"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="12dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/fira_sans_regular"
+                    android:gravity="start"
+                    android:text="Kelurahan"
+                    android:textColor="@color/textColor"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/fira_sans_regular"
+                        android:gravity="start"
+                        android:text="RT"
+                        android:textColor="@color/textColor"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/fira_sans_regular"
+                        android:gravity="start"
+                        android:text="RW"
+                        android:textColor="@color/textColor"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorbgedittext"
+                    android:gravity="center|start"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/et_kelurahan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@null"
+                        android:fontFamily="@font/fira_sans_bold"
+                        android:hint="Kelurahan"
+                        android:textColorHint="@color/colorbghint"
+                        android:textColor="@color/textColor"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="8dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorbgedittext"
+                        android:gravity="center|start"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/et_rt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="8dp"
+                            android:background="@null"
+                            android:fontFamily="@font/fira_sans_bold"
+                            android:hint="RT"
+                            android:textColorHint="@color/colorbghint"
+                            android:inputType="number"
+                            android:singleLine="true"
+                            android:textColor="@color/textColor"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/colorbgedittext"
+                        android:gravity="center|start"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/et_rw"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginEnd="8dp"
+                            android:background="@null"
+                            android:fontFamily="@font/fira_sans_bold"
+                            android:hint="RW"
+                            android:textColorHint="@color/colorbghint"
+                            android:inputType="number"
+                            android:singleLine="true"
+                            android:textColor="@color/textColor"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints"
+                android:textSize="12sp"
+                android:textColor="@color/textColor"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/fira_sans_regular"
+                android:text="Keterangan"/>
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/colorbgedittext"
+                android:gravity="center|start">
+                <EditText
+                    android:id="@+id/et_keterangan"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/textColor"
+                    android:fontFamily="@font/fira_sans_bold"
+                    android:textColorHint="@color/colorbghint"
+                    android:background="@null"
+                    android:gravity="top|left"
+                    android:hint="Keterangan Tambahan Jika Ada"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/btn_simpan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/btn_radius_6dp"
+                android:clickable="true"
+                android:fontFamily="@font/fira_sans_bold"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:text="Simpan"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

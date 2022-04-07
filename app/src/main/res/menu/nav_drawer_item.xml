@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/grp_1"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_Kontak"
+            android:icon="@drawable/ic_kontak"
+            android:title="Kontak Kami" />
+        <item
+            android:id="@+id/nav_Panduan"
+            android:icon="@drawable/ic_panduan"
+            android:title="Panduan" />
+        <item
+            android:id="@+id/nav_Bantuan"
+            android:icon="@drawable/ic_bantuan"
+            android:title="Bantuan" />
+        <item
+            android:id="@+id/nav_Website"
+            android:icon="@drawable/ic_web"
+            android:title="Website" />
+    </group>
+    <group
+        android:title="account"
+        android:id="@+id/group_akun"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_Akun"
+            android:icon="@drawable/ic_akun"
+            android:title="Akun" />
+        <item
+            android:id="@+id/nav_Keluar"
+            android:icon="@drawable/ic_exit"
+            android:title="Keluar" />
+    </group>
+
+</menu>

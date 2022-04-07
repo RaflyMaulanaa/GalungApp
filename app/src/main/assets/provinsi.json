@@ -1,0 +1,120 @@
+{
+  "provinsi": [
+    {
+      "id": 0,
+      "nama_provinsi": "Pilih Provinsi",
+      "kabupaten": [
+        {
+          "id": 0,
+          "nama_kota": "Pilih Kabupaten/Kota"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "nama_provinsi": "Sulawesi Selatan",
+      "kabupaten": [
+        {
+          "id": 0,
+          "nama_kota": "Pilih Kabupaten/Kota"
+        },
+        {
+          "id": 38,
+          "nama_kota": "Bantaeng"
+        },
+        {
+          "id": 47,
+          "nama_kota": "Barru"
+        },
+        {
+          "id": 87,
+          "nama_kota": "Bone"
+        },
+        {
+          "id": 95,
+          "nama_kota": "Bulukumba"
+        },
+        {
+          "id": 123,
+          "nama_kota": "Enrekang"
+        },
+        {
+          "id": 132,
+          "nama_kota": "Gowa"
+        },
+        {
+          "id": 162,
+          "nama_kota": "Jeneponto"
+        },
+        {
+          "id": 244,
+          "nama_kota": "Luwu"
+        },
+        {
+          "id": 245,
+          "nama_kota": "Luwu Timur"
+        },
+        {
+          "id": 246,
+          "nama_kota": "Luwu Utara"
+        },
+        {
+          "id": 254,
+          "nama_kota": "Makassar"
+        },
+        {
+          "id": 275,
+          "nama_kota": "Maros"
+        },
+        {
+          "id": 328,
+          "nama_kota": "Palopo"
+        },
+        {
+          "id": 333,
+          "nama_kota": "Pangkajene Kepulauan"
+        },
+        {
+          "id": 336,
+          "nama_kota": "Parepare"
+        },
+        {
+          "id": 360,
+          "nama_kota": "Pinrang"
+        },
+        {
+          "id": 396,
+          "nama_kota": "Selayar (Kepulauan Selayar)"
+        },
+        {
+          "id": 408,
+          "nama_kota": "Sidenreng Rappang/Rapang"
+        },
+        {
+          "id": 416,
+          "nama_kota": "Sinjai"
+        },
+        {
+          "id": 423,
+          "nama_kota": "Soppeng"
+        },
+        {
+          "id": 448,
+          "nama_kota": "Takalar"
+        },
+        {
+          "id": 451,
+          "nama_kota": "Tana Toraja"
+        },
+        {
+          "id": 486,
+          "nama_kota": "Toraja Utara"
+        },
+        {
+          "id": 493,
+          "nama_kota": "Wajo"
+        }
+      ]
+    }
+  ]
+}

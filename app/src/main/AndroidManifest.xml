@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="id.example.galungapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".SuksesCheckoutActivity"></activity>
+        <activity android:name=".TesLayoutActivity" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity android:name=".PesananAcitivty" />
+        <activity android:name=".MenuDrawer.KontakKamiActivity" />
+        <activity android:name=".LihatSemua.LihatSemuaActivity" />
+        <activity android:name=".UbahAlamatActivity" />
+        <activity android:name=".CheckoutActivity" />
+        <activity android:name=".KeranjangActivity" />
+        <activity android:name=".DetailJualActivity" />
+        <activity android:name=".MenuUtama.ModalTanamActivity" />
+        <activity android:name=".MenuUtama.GadaiSawahActivity" />
+        <activity android:name=".MenuUtama.JualGabahActivity" />
+        <activity android:name=".MenuUtama.MenuUtamaAcitivty" />
+        <activity android:name=".MenuDrawer.EditPasswordActivity" />
+        <activity android:name=".MenuDrawer.EditSawahActivity" />
+        <activity android:name=".MenuDrawer.DaftarSawahActivity" />
+        <activity android:name=".RegistrasiLogin.LoginRegisterActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".MenuDrawer.AkunActivity" />
+        <activity android:name=".Maps.MapsActivity" />
+        <activity android:name=".SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
